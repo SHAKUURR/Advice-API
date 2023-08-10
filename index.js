@@ -12,7 +12,6 @@ const init = function () {
 };
 const openModal = function () {
 	const query = document.querySelector(".input").value;
-	init();
 	fetch(`https://api.adviceslip.com/advice/search/${query}`)
 		.then((response) => {
 			if (!response.ok)
@@ -35,6 +34,7 @@ const openModal = function () {
 			modalText.textContent = err.message;
 			heading.textContent = "Say Cheese! 😎";
 		});
+	init();
 };
 
 const closeModal = function () {
