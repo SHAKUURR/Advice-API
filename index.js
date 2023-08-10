@@ -40,6 +40,7 @@ const openModal = function () {
 const closeModal = function () {
 	modal.classList.add("hidden");
 	overlay.classList.add("hidden");
+	modalText.textContent = "";
 };
 
 //Adding event handler to each buttons
