@@ -23,7 +23,6 @@ const openModal = function () {
 		.then((advices) => {
 			// const { advice } = advices.slip;
 			if (!advices.slips || advices.slips.length === 0) {
-				heading.textContent = "Say Cheese! 😎";
 				throw new Error("No advice found for this search.");
 			}
 			const randomIndex = Math.floor(Math.random() * advices.slips.length);
@@ -32,7 +31,6 @@ const openModal = function () {
 		})
 		.catch((err) => {
 			modalText.textContent = err.message;
-			heading.textContent = "Say Cheese! 😎";
 		});
 	init();
 };
