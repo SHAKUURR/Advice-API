@@ -3,6 +3,11 @@
     font-size: 50%;
   }
 
+  .head {
+    line-height: 6rem;
+    margin-bottom: 1.5rem;
+  }
+
   .content {
     width: 80%;
   }
